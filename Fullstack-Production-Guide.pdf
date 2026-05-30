@@ -1,0 +1,708 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 1583 >>
+stream
+0.040 0.350 0.550 rg 0.00 691.89 595.28 150.00 re f
+BT /F2 12 Tf 1.000 1.000 1.000 rg 1 0 0 1 56.00 763.89 Tm (PRODUCTION REFERENCE) Tj ET
+BT /F2 30 Tf 1.000 1.000 1.000 rg 1 0 0 1 56.00 729.89 Tm (Production Fullstack Guide) Tj ET
+BT /F1 13 Tf 0.150 0.150 0.150 rg 1 0 0 1 56.00 631.89 Tm (Django backend + Next.js / TypeScript frontend) Tj ET
+BT /F1 13 Tf 0.150 0.150 0.150 rg 1 0 0 1 56.00 611.89 Tm (What actually matters when you ship to real users.) Tj ET
+BT /F1 10 Tf 0.420 0.420 0.420 rg 1 0 0 1 56.00 587.89 Tm (Generated: May 2026) Tj ET
+BT /F2 15 Tf 0.040 0.350 0.550 rg 1 0 0 1 56.00 541.89 Tm (Contents) Tj ET
+0.850 0.340 0.100 rg 57.00 517.39 3.00 3.00 re f
+BT /F1 11 Tf 0.180 0.180 0.180 rg 1 0 0 1 70.00 515.89 Tm (Introduction) Tj ET
+0.850 0.340 0.100 rg 57.00 499.39 3.00 3.00 re f
+BT /F1 11 Tf 0.180 0.180 0.180 rg 1 0 0 1 70.00 497.89 Tm (Part A - Django in Production) Tj ET
+0.850 0.340 0.100 rg 57.00 481.39 3.00 3.00 re f
+BT /F1 11 Tf 0.180 0.180 0.180 rg 1 0 0 1 70.00 479.89 Tm (Part B - Next.js and TypeScript in Production) Tj ET
+0.850 0.340 0.100 rg 57.00 463.39 3.00 3.00 re f
+BT /F1 11 Tf 0.180 0.180 0.180 rg 1 0 0 1 70.00 461.89 Tm (Part C - Connecting Backend and Frontend) Tj ET
+0.850 0.340 0.100 rg 57.00 445.39 3.00 3.00 re f
+BT /F1 11 Tf 0.180 0.180 0.180 rg 1 0 0 1 70.00 443.89 Tm (Part D - The AI-Era Developer Mindset) Tj ET
+0.850 0.340 0.100 rg 57.00 427.39 3.00 3.00 re f
+BT /F1 11 Tf 0.180 0.180 0.180 rg 1 0 0 1 70.00 425.89 Tm (Part E - Production-Ready Checklist) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (1 / 10) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 6074 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+BT /F2 16 Tf 0.040 0.350 0.550 rg 1 0 0 1 56.00 749.89 Tm (Introduction) Tj ET
+0.040 0.350 0.550 rg 56.00 744.89 483.28 1.40 re f
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 722.39 Tm (This guide is a focused reference for building production-grade systems with a Django backend and a) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 707.39 Tm (Next.js / TypeScript frontend. It is not a tutorial and it is not about toy projects. Every item here is) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 692.39 Tm (something that matters when real users, real data, and real money are involved.) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 672.39 Tm (The goal is simple: give you the high-leverage knowledge that separates code that "works on my) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 657.39 Tm (machine" from code that survives production. In the age of AI coding agents you do not need to) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 642.39 Tm (memorize every API, but you absolutely must understand these concepts so you can review, verify, and) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 627.39 Tm (make the right architectural decisions. AI writes the code; you own the system.) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 607.39 Tm (How to read this guide: skim the section headers first, then go deep where you feel weak. The) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 592.39 Tm ("Common pitfalls" lists at the end of each major part are the fastest way to find gaps in your current) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 577.39 Tm (setup.) Tj ET
+BT /F2 16 Tf 0.040 0.350 0.550 rg 1 0 0 1 56.00 539.89 Tm (Part A - Django in Production) Tj ET
+0.040 0.350 0.550 rg 56.00 534.89 483.28 1.40 re f
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 502.39 Tm (A1. Settings and configuration) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 484.89 Tm (Treat configuration as code that follows the 12-factor methodology: strict separation of config from code,) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 469.89 Tm (and config lives in the environment.) Tj ET
+0.040 0.350 0.550 rg 61.00 452.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 449.89 Tm (Split settings into base, development, and production modules, or use a single settings file driven) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 435.39 Tm (entirely by environment variables. Pick one and be consistent.) Tj ET
+0.040 0.350 0.550 rg 61.00 423.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 420.89 Tm (Read secrets from the environment using django-environ or pydantic-settings. Never hardcode) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 406.39 Tm (secrets and never commit a real .env file. Commit a .env.example with dummy values instead.) Tj ET
+0.040 0.350 0.550 rg 61.00 394.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 391.89 Tm (The non-negotiable production flags: DEBUG must be False, SECRET_KEY must come from the) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 377.39 Tm (environment and be long and random, ALLOWED_HOSTS must list your real domains.) Tj ET
+0.040 0.350 0.550 rg 61.00 365.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 362.89 Tm (Enforce HTTPS and secure cookies: SECURE_SSL_REDIRECT, SESSION_COOKIE_SECURE,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 348.39 Tm (CSRF_COOKIE_SECURE, SECURE_HSTS_SECONDS, SECURE_PROXY_SSL_HEADER when) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 333.89 Tm (behind a proxy.) Tj ET
+0.040 0.350 0.550 rg 61.00 321.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 319.39 Tm (Fail loudly on missing required config at startup rather than failing mysteriously at request time.) Tj ET
+0.960 0.960 0.940 rg 56.00 129.79 483.28 185.60 re f
+0.040 0.350 0.550 rg 56.00 129.79 2.50 185.60 re f
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 300.39 Tm (# settings/production.py \(env-driven\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 287.99 Tm (import environ) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 275.59 Tm (env = environ.Env\(DEBUG=\(bool, False\)\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 263.19 Tm () Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 250.79 Tm (DEBUG = env\("DEBUG"\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 238.39 Tm (SECRET_KEY = env\("SECRET_KEY"\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 225.99 Tm (ALLOWED_HOSTS = env.list\("ALLOWED_HOSTS"\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 213.59 Tm (DATABASES = {"default": env.db\("DATABASE_URL"\)}) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 201.19 Tm () Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 188.79 Tm (SECURE_SSL_REDIRECT = True) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 176.39 Tm (SESSION_COOKIE_SECURE = True) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 163.99 Tm (CSRF_COOKIE_SECURE = True) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 151.59 Tm (SECURE_HSTS_SECONDS = 31536000) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 139.19 Tm (SECURE_PROXY_SSL_HEADER = \("HTTP_X_FORWARDED_PROTO", "https"\)) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 101.29 Tm (A2. Project structure and the service layer) Tj ET
+0.040 0.350 0.550 rg 61.00 86.29 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 83.79 Tm (Keep apps small and focused on a single domain \(users, billing, orders\). Avoid one giant app.) Tj ET
+0.040 0.350 0.550 rg 61.00 71.79 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 69.29 Tm (Keep business logic out of views and out of serializers. Views handle HTTP, serializers handle shape) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (2 / 10) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 7144 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 767.39 Tm (and validation, models handle persistence. Put real logic in a service layer \(plain functions or service) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 752.89 Tm (classes\) so it can be tested and reused.) Tj ET
+0.040 0.350 0.550 rg 61.00 740.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 738.39 Tm (Define a custom user model on day one, even if it is identical to the default. Changing it later is) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 723.89 Tm (painful. Set AUTH_USER_MODEL before the first migration.) Tj ET
+0.040 0.350 0.550 rg 61.00 711.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 709.39 Tm (Use selectors \(read functions\) and services \(write functions\) as a simple, testable boundary between) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 694.89 Tm (your domain and the web layer.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 670.39 Tm (A3. Database and the ORM) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 652.89 Tm (The database is where most production incidents and most performance problems live.) Tj ET
+0.040 0.350 0.550 rg 61.00 635.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 632.89 Tm (Use PostgreSQL in production. Use the same engine locally; do not develop on SQLite and deploy) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 618.39 Tm (on Postgres.) Tj ET
+0.040 0.350 0.550 rg 61.00 606.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 603.89 Tm (Kill N+1 queries. Use select_related for foreign keys and prefetch_related for many-to-many and) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 589.39 Tm (reverse relations. Profile with django-debug-toolbar or django-silk.) Tj ET
+0.040 0.350 0.550 rg 61.00 577.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 574.89 Tm (Add indexes for every field you filter, order, or join on frequently. Use composite indexes that match) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 560.39 Tm (your query patterns. Watch for unused indexes too.) Tj ET
+0.040 0.350 0.550 rg 61.00 548.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 545.89 Tm (Use only\(\) and defer\(\) to avoid loading large columns you do not need. Use values\(\) and values_list\(\)) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 531.39 Tm (when you do not need model instances.) Tj ET
+0.040 0.350 0.550 rg 61.00 519.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 516.89 Tm (Use bulk_create, bulk_update, and update\(\) to avoid per-row queries. Use iterator\(\) for large result) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 502.39 Tm (sets to control memory.) Tj ET
+0.040 0.350 0.550 rg 61.00 490.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 487.89 Tm (Wrap multi-step writes in transaction.atomic\(\). Use select_for_update\(\) to prevent race conditions on) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 473.39 Tm (critical rows.) Tj ET
+0.040 0.350 0.550 rg 61.00 461.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 458.89 Tm (Treat migrations as production artifacts: review them, never edit applied migrations, and be careful) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 444.39 Tm (with data migrations and long-running schema changes that lock tables.) Tj ET
+0.960 0.960 0.940 rg 56.00 341.59 483.28 98.80 re f
+0.040 0.350 0.550 rg 56.00 341.59 2.50 98.80 re f
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 425.39 Tm (# Avoid N+1: one query instead of one-per-row) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 412.99 Tm (orders = \() Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 400.59 Tm (    Order.objects) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 388.19 Tm (    .select_related\("customer"\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 375.79 Tm (    .prefetch_related\("items__product"\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 363.39 Tm (    .filter\(status="paid"\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 350.99 Tm (\)) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 313.09 Tm (A4. The API layer) Tj ET
+0.040 0.350 0.550 rg 61.00 298.09 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 295.59 Tm (Choose Django REST Framework \(mature, batteries included\) or Django Ninja \(fast, type hints,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 281.09 Tm (Pydantic\). Both are solid; Ninja is lighter and more modern, DRF has the bigger ecosystem.) Tj ET
+0.040 0.350 0.550 rg 61.00 269.09 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 266.59 Tm (Validate all input at the boundary. Never trust the client. Serializers \(DRF\) or Pydantic schemas) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 252.09 Tm (\(Ninja\) are your validation gate.) Tj ET
+0.040 0.350 0.550 rg 61.00 240.09 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 237.59 Tm (Always paginate list endpoints. Unbounded lists are a denial-of-service waiting to happen.) Tj ET
+0.040 0.350 0.550 rg 61.00 225.59 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 223.09 Tm (Version your API from the start \(URL path like /api/v1/ is the simplest\). Breaking changes go in a new) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 208.59 Tm (version.) Tj ET
+0.040 0.350 0.550 rg 61.00 196.59 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 194.09 Tm (Apply throttling and rate limits per user and per IP. Return proper status codes and a consistent error) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 179.59 Tm (shape.) Tj ET
+0.040 0.350 0.550 rg 61.00 167.59 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 165.09 Tm (Generate an OpenAPI schema with drf-spectacular \(DRF\) or the built-in schema \(Ninja\). This) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 150.59 Tm (schema is also how you generate a typed frontend client.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 126.09 Tm (A5. Authentication and security) Tj ET
+0.040 0.350 0.550 rg 61.00 111.09 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 108.59 Tm (Choose your auth model deliberately. Session auth with httpOnly cookies is simplest and safest for a) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 94.09 Tm (same-site web app. JWT \(via simplejwt\) suits mobile clients and cross-domain APIs but adds token) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 79.59 Tm (rotation and revocation complexity.) Tj ET
+0.040 0.350 0.550 rg 61.00 67.59 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 65.09 Tm (If you use JWT in a browser, store it in an httpOnly, Secure, SameSite cookie, never in localStorage,) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (3 / 10) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 7162 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 767.39 Tm (to avoid XSS token theft.) Tj ET
+0.040 0.350 0.550 rg 61.00 755.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 752.89 Tm (Keep CSRF protection on for any cookie-based auth. Configure CORS explicitly with) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 738.39 Tm (django-cors-headers; never use a wildcard origin with credentials.) Tj ET
+0.040 0.350 0.550 rg 61.00 726.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 723.89 Tm (Use Argon2 for password hashing \(add argon2-cffi and put it first in PASSWORD_HASHERS\).) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 709.39 Tm (Enforce password validators.) Tj ET
+0.040 0.350 0.550 rg 61.00 697.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 694.89 Tm (Enforce permissions at the object level, not just the view level. A user must not be able to read or) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 680.39 Tm (edit another user's records by changing an ID.) Tj ET
+0.040 0.350 0.550 rg 61.00 668.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 665.89 Tm (The ORM protects against SQL injection only if you avoid raw string formatting in raw\(\) and extra\(\).) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 651.39 Tm (Template autoescaping protects against XSS only if you do not mark untrusted data as safe.) Tj ET
+0.040 0.350 0.550 rg 61.00 639.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 636.89 Tm (Add a Content Security Policy, set X-Content-Type-Options, and keep dependencies patched) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 622.39 Tm (\(pip-audit, Dependabot\).) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 597.89 Tm (A6. Background tasks and caching) Tj ET
+0.040 0.350 0.550 rg 61.00 582.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 580.39 Tm (Move slow or external work \(emails, payments, image processing, third-party calls\) out of the request) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 565.89 Tm (cycle into Celery workers with Redis or RabbitMQ as the broker.) Tj ET
+0.040 0.350 0.550 rg 61.00 553.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 551.39 Tm (Make tasks idempotent and safe to retry. Configure retries with backoff. Never assume a task runs) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 536.89 Tm (exactly once.) Tj ET
+0.040 0.350 0.550 rg 61.00 524.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 522.39 Tm (Use Celery Beat for scheduled jobs. Monitor the queue depth and worker health.) Tj ET
+0.040 0.350 0.550 rg 61.00 510.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 507.89 Tm (Cache expensive reads in Redis. Cache at the right layer: per-view caching, low-level cache.get/set) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 493.39 Tm (for computed values, or template fragment caching.) Tj ET
+0.040 0.350 0.550 rg 61.00 481.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 478.89 Tm (The hard part of caching is invalidation. Prefer short TTLs and explicit invalidation on write over) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 464.39 Tm (clever schemes. Always handle the cache-miss path correctly.) Tj ET
+0.960 0.960 0.940 rg 56.00 336.79 483.28 123.60 re f
+0.040 0.350 0.550 rg 56.00 336.79 2.50 123.60 re f
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 445.39 Tm (# tasks.py) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 432.99 Tm (from celery import shared_task) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 420.59 Tm () Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 408.19 Tm (@shared_task\(bind=True, max_retries=3, default_retry_delay=10\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 395.79 Tm (def send_receipt\(self, order_id\):) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 383.39 Tm (    try:) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 370.99 Tm (        deliver_receipt\(order_id\)) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 358.59 Tm (    except TransientError as exc:) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 346.19 Tm (        raise self.retry\(exc=exc\)) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 308.29 Tm (A7. Performance and scaling) Tj ET
+0.040 0.350 0.550 rg 61.00 293.29 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 290.79 Tm (Run with Gunicorn \(WSGI\) or Uvicorn/Gunicorn with Uvicorn workers \(ASGI\) if you use async views) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 276.29 Tm (or websockets. Tune the worker and thread count to your CPU and workload; start with workers = 2) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 261.79 Tm (x cores + 1.) Tj ET
+0.040 0.350 0.550 rg 61.00 249.79 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 247.29 Tm (Set sane timeouts. A slow upstream call should not pin a worker forever.) Tj ET
+0.040 0.350 0.550 rg 61.00 235.29 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 232.79 Tm (Serve static files with WhiteNoise or a CDN, and serve user media from object storage \(S3 or) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 218.29 Tm (compatible\), never from the container's local disk.) Tj ET
+0.040 0.350 0.550 rg 61.00 206.29 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 203.79 Tm (Use CONN_MAX_AGE for persistent DB connections, and put PgBouncer in front of Postgres for) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 189.29 Tm (connection pooling at scale.) Tj ET
+0.040 0.350 0.550 rg 61.00 177.29 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 174.79 Tm (Scale reads with read replicas and a database router once a single primary is no longer enough.) Tj ET
+0.040 0.350 0.550 rg 61.00 162.79 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 160.29 Tm (Profile before optimizing. Measure with silk or APM; do not guess.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 135.79 Tm (A8. Testing and code quality) Tj ET
+0.040 0.350 0.550 rg 61.00 120.79 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 118.29 Tm (Use pytest with pytest-django. Use factory_boy for test data instead of fixtures you maintain by hand.) Tj ET
+0.040 0.350 0.550 rg 61.00 106.29 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 103.79 Tm (Test the service layer and the API contract. Aim for meaningful coverage of business rules, not a) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 89.29 Tm (coverage percentage for its own sake.) Tj ET
+0.040 0.350 0.550 rg 61.00 77.29 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 74.79 Tm (Enforce style and types automatically: ruff \(lint + format\) or black + ruff, plus mypy for type checking.) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (4 / 10) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 7073 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 767.39 Tm (Wire it all into pre-commit so bad code never reaches the repo.) Tj ET
+0.040 0.350 0.550 rg 61.00 755.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 752.89 Tm (Keep tests fast and isolated. Use a real Postgres in CI, not SQLite, so tests match production) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 738.39 Tm (behavior.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 713.89 Tm (A9. Observability) Tj ET
+0.040 0.350 0.550 rg 61.00 698.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 696.39 Tm (Log in structured JSON with a request ID on every line so you can trace a single request across) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 681.89 Tm (services. Never log secrets, tokens, or full card numbers.) Tj ET
+0.040 0.350 0.550 rg 61.00 669.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 667.39 Tm (Capture and triage errors with Sentry. Set up alerts that page a human only for real problems.) Tj ET
+0.040 0.350 0.550 rg 61.00 655.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 652.89 Tm (Expose a health check endpoint for liveness and readiness probes. Export metrics \(Prometheus\) for) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 638.39 Tm (request rate, latency, error rate, and queue depth.) Tj ET
+0.040 0.350 0.550 rg 61.00 626.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 623.89 Tm (Track the four golden signals: latency, traffic, errors, and saturation.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 599.39 Tm (A10. Deployment and infrastructure) Tj ET
+0.040 0.350 0.550 rg 61.00 584.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 581.89 Tm (Containerize with a multi-stage Dockerfile: build dependencies in one stage, copy only what you) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 567.39 Tm (need into a slim runtime image. Run as a non-root user.) Tj ET
+0.040 0.350 0.550 rg 61.00 555.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 552.89 Tm (On deploy, run collectstatic and run migrate exactly once \(not once per replica\). Use a) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 538.39 Tm (release/migration step or a job, not the app startup, to run migrations.) Tj ET
+0.040 0.350 0.550 rg 61.00 526.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 523.89 Tm (Put Nginx or a load balancer in front of Gunicorn. Terminate TLS at the edge. Enable gzip and) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 509.39 Tm (proper cache headers.) Tj ET
+0.040 0.350 0.550 rg 61.00 497.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 494.89 Tm (Aim for zero-downtime deploys \(rolling or blue-green\). Make migrations backward compatible so old) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 480.39 Tm (and new code can run together briefly.) Tj ET
+0.040 0.350 0.550 rg 61.00 468.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 465.89 Tm (Manage secrets with a real secrets manager \(AWS Secrets Manager, Vault, or your platform's) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 451.39 Tm (equivalent\), injected as environment variables at runtime.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 426.89 Tm (A11. Django common pitfalls) Tj ET
+0.040 0.350 0.550 rg 61.00 411.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 409.39 Tm (DEBUG=True in production \(leaks stack traces and settings\).) Tj ET
+0.040 0.350 0.550 rg 61.00 397.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 394.89 Tm (Empty or wildcard ALLOWED_HOSTS, or committing SECRET_KEY.) Tj ET
+0.040 0.350 0.550 rg 61.00 382.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 380.39 Tm (N+1 queries and missing database indexes.) Tj ET
+0.040 0.350 0.550 rg 61.00 368.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 365.89 Tm (Blocking calls \(HTTP, email, heavy compute\) inside the request cycle instead of a task queue.) Tj ET
+0.040 0.350 0.550 rg 61.00 353.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 351.39 Tm (Storing uploaded media on the container filesystem, which disappears on redeploy.) Tj ET
+0.040 0.350 0.550 rg 61.00 339.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 336.89 Tm (Running migrations concurrently from multiple replicas.) Tj ET
+0.040 0.350 0.550 rg 61.00 324.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 322.39 Tm (Object-level permission gaps that let users access other users' data by ID.) Tj ET
+BT /F2 16 Tf 0.040 0.350 0.550 rg 1 0 0 1 56.00 290.39 Tm (Part B - Next.js and TypeScript in Production) Tj ET
+0.040 0.350 0.550 rg 56.00 285.39 483.28 1.40 re f
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 252.89 Tm (B1. Rendering model \(App Router\)) Tj ET
+0.040 0.350 0.550 rg 61.00 237.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 235.39 Tm (Default to Server Components. They run on the server, keep secrets and heavy logic off the client,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 220.89 Tm (and ship zero JavaScript for static parts. Add "use client" only when you need interactivity, browser) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 206.39 Tm (APIs, state, or effects.) Tj ET
+0.040 0.350 0.550 rg 61.00 194.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 191.89 Tm (Understand the rendering strategies: static rendering \(build time\), dynamic rendering \(per request\),) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 177.39 Tm (and incremental static regeneration \(ISR\) with revalidate. Choose per route based on how fresh the) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 162.89 Tm (data must be.) Tj ET
+0.040 0.350 0.550 rg 61.00 150.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 148.39 Tm (Use streaming and Suspense to send the shell quickly and stream slower data in, improving) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 133.89 Tm (perceived performance.) Tj ET
+0.040 0.350 0.550 rg 61.00 121.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 119.39 Tm (Keep client components small and at the leaves of your tree. A "use client" at the top of a tree turns) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 104.89 Tm (everything below it into client code.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 80.39 Tm (B2. Data fetching and caching) Tj ET
+0.040 0.350 0.550 rg 61.00 65.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 62.89 Tm (Fetch on the server in Server Components using fetch with explicit caching: cache for static data,) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (5 / 10) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 7099 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 767.39 Tm (revalidate: N for time-based, and no-store for always-fresh data. Know which one each request) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 752.89 Tm (needs.) Tj ET
+0.040 0.350 0.550 rg 61.00 740.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 738.39 Tm (Use Route Handlers for your own API endpoints and Server Actions for mutations triggered from) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 723.89 Tm (forms and components.) Tj ET
+0.040 0.350 0.550 rg 61.00 711.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 709.39 Tm (Avoid request waterfalls. Fetch in parallel with Promise.all when requests are independent.) Tj ET
+0.040 0.350 0.550 rg 61.00 697.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 694.89 Tm (For client-side server state \(polling, infinite scroll, optimistic updates\), use TanStack Query \(React) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 680.39 Tm (Query\) or SWR. Do not hand-roll fetch-in-useEffect for anything non-trivial.) Tj ET
+0.040 0.350 0.550 rg 61.00 668.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 665.89 Tm (Revalidate caches after mutations with revalidatePath or revalidateTag so the UI reflects new data.) Tj ET
+0.960 0.960 0.940 rg 56.00 550.69 483.28 111.20 re f
+0.040 0.350 0.550 rg 56.00 550.69 2.50 111.20 re f
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 646.89 Tm (// Server Component: parallel fetch, time-based revalidation) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 634.49 Tm (async function Dashboard\(\) {) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 622.09 Tm (  const [stats, feed] = await Promise.all\([) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 609.69 Tm (    fetch\(api\("/stats"\), { next: { revalidate: 60 } }\).then\(r => r.json\(\)\),) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 597.29 Tm (    fetch\(api\("/feed"\), { cache: "no-store" }\).then\(r => r.json\(\)\),) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 584.89 Tm (  ]\);) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 572.49 Tm (  return <DashboardView stats={stats} feed={feed} />;) Tj ET
+BT /F3 9 Tf 0.120 0.120 0.120 rg 1 0 0 1 64.00 560.09 Tm (}) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 522.19 Tm (B3. TypeScript discipline) Tj ET
+0.040 0.350 0.550 rg 61.00 507.19 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 504.69 Tm (Turn on strict mode and keep it on. The whole point of TypeScript is lost without it.) Tj ET
+0.040 0.350 0.550 rg 61.00 492.69 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 490.19 Tm (Ban any. When you do not know a type, use unknown and narrow it. Treat eslint no-explicit-any as) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 475.69 Tm (an error.) Tj ET
+0.040 0.350 0.550 rg 61.00 463.69 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 461.19 Tm (Types are erased at runtime, so validate all external data \(API responses, form input, URL params,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 446.69 Tm (env vars\) at the boundary with Zod. A type assertion is a promise you cannot keep; a Zod parse is a) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 432.19 Tm (check you can trust.) Tj ET
+0.040 0.350 0.550 rg 61.00 420.19 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 417.69 Tm (Type your environment variables with a schema \(for example t3-env\) so a missing variable fails the) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 403.19 Tm (build, not production.) Tj ET
+0.040 0.350 0.550 rg 61.00 391.19 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 388.69 Tm (Share types with the backend by generating them from the OpenAPI schema \(openapi-typescript\).) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 374.19 Tm (One source of truth, no drift.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 349.69 Tm (B4. State and forms) Tj ET
+0.040 0.350 0.550 rg 61.00 334.69 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 332.19 Tm (Separate server state from client state. Server state \(data from your API\) belongs in React) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 317.69 Tm (Query/SWR. Client state \(UI toggles, wizard steps\) belongs in component state or a small store like) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 303.19 Tm (Zustand or Jotai. Do not put server data in a global store and try to keep it in sync by hand.) Tj ET
+0.040 0.350 0.550 rg 61.00 291.19 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 288.69 Tm (Build forms with react-hook-form for performance and Zod for validation, sharing the same schema) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 274.19 Tm (between client and server.) Tj ET
+0.040 0.350 0.550 rg 61.00 262.19 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 259.69 Tm (Implement optimistic updates carefully and always handle the rollback path on error.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 235.19 Tm (B5. Styling, UI, and accessibility) Tj ET
+0.040 0.350 0.550 rg 61.00 220.19 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 217.69 Tm (Tailwind CSS is the de facto styling approach. Pair it with a component layer like shadcn/ui \(built on) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 203.19 Tm (Radix\) for accessible, unstyled primitives you own and customize.) Tj ET
+0.040 0.350 0.550 rg 61.00 191.19 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 188.69 Tm (Accessibility is a production requirement, not a nice-to-have: semantic HTML, labels on inputs,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 174.19 Tm (keyboard navigation, focus management, and sufficient color contrast. Many a11y wins are also SEO) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 159.69 Tm (wins.) Tj ET
+0.040 0.350 0.550 rg 61.00 147.69 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 145.19 Tm (Keep a consistent design system: spacing scale, color tokens, and typography defined once.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 120.69 Tm (B6. Performance and Core Web Vitals) Tj ET
+0.040 0.350 0.550 rg 61.00 105.69 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 103.19 Tm (Optimize the three Core Web Vitals: LCP \(largest contentful paint\), CLS \(cumulative layout shift\), and) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 88.69 Tm (INP \(interaction to next paint\).) Tj ET
+0.040 0.350 0.550 rg 61.00 76.69 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 74.19 Tm (Use next/image for automatic resizing, lazy loading, and modern formats. Always set width and) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (6 / 10) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 7038 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 767.39 Tm (height to avoid layout shift.) Tj ET
+0.040 0.350 0.550 rg 61.00 755.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 752.89 Tm (Use next/font to self-host fonts and eliminate render-blocking font requests and layout shift.) Tj ET
+0.040 0.350 0.550 rg 61.00 740.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 738.39 Tm (Reduce client JavaScript: prefer Server Components, code-split with next/dynamic, and lazy-load) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 723.89 Tm (heavy widgets \(maps, editors, charts\).) Tj ET
+0.040 0.350 0.550 rg 61.00 711.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 709.39 Tm (Analyze your bundle \(@next/bundle-analyzer\). Watch for large dependencies pulled into client) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 694.89 Tm (components.) Tj ET
+0.040 0.350 0.550 rg 61.00 682.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 680.39 Tm (Memoize only where profiling shows a need. Premature memoization adds complexity without) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 665.89 Tm (benefit.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 641.39 Tm (B7. Authentication on the frontend) Tj ET
+0.040 0.350 0.550 rg 61.00 626.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 623.89 Tm (Use Auth.js \(NextAuth\) for common providers, or integrate your Django auth via httpOnly cookies.) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 609.39 Tm (Store session tokens in httpOnly, Secure cookies, never in localStorage.) Tj ET
+0.040 0.350 0.550 rg 61.00 597.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 594.89 Tm (Protect routes in middleware for a fast, centralized redirect, and re-check authorization on the server) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 580.39 Tm (for every sensitive action. Never trust the client to enforce access.) Tj ET
+0.040 0.350 0.550 rg 61.00 568.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 565.89 Tm (Send CSRF protection on mutations when using cookie auth. Keep the auth flow consistent between) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 551.39 Tm (server and client components.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 526.89 Tm (B8. SEO and metadata) Tj ET
+0.040 0.350 0.550 rg 61.00 511.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 509.39 Tm (Use the Metadata API \(static metadata export or generateMetadata\) for titles, descriptions, and) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 494.89 Tm (Open Graph tags.) Tj ET
+0.040 0.350 0.550 rg 61.00 482.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 480.39 Tm (Generate sitemap.xml and robots.txt. Add structured data \(JSON-LD\) for rich results where relevant.) Tj ET
+0.040 0.350 0.550 rg 61.00 468.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 465.89 Tm (Use dynamic Open Graph images for shareable links. Set canonical URLs to avoid duplicate-content) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 451.39 Tm (issues.) Tj ET
+0.040 0.350 0.550 rg 61.00 439.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 436.89 Tm (For multi-language sites, use the i18n routing patterns and set hreflang correctly.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 412.39 Tm (B9. Project structure and quality) Tj ET
+0.040 0.350 0.550 rg 61.00 397.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 394.89 Tm (Organize by feature, not by file type, once the app grows. Co-locate components, hooks, and tests) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 380.39 Tm (with the feature they belong to.) Tj ET
+0.040 0.350 0.550 rg 61.00 368.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 365.89 Tm (Enforce ESLint and Prettier, set up absolute imports, and add Husky with lint-staged so commits are) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 351.39 Tm (clean.) Tj ET
+0.040 0.350 0.550 rg 61.00 339.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 336.89 Tm (Understand env var exposure: only variables prefixed with NEXT_PUBLIC_ are sent to the browser.) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 322.39 Tm (Everything else stays server-only. Never put a secret behind NEXT_PUBLIC_.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 297.89 Tm (B10. Error handling and UX states) Tj ET
+0.040 0.350 0.550 rg 61.00 282.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 280.39 Tm (Use the special files: loading.tsx for suspense fallbacks, error.tsx for route error boundaries, and) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 265.89 Tm (not-found.tsx for 404s. Always handle the loading and error states; a spinner that never resolves is a) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 251.39 Tm (bug.) Tj ET
+0.040 0.350 0.550 rg 61.00 239.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 236.89 Tm (Show meaningful empty states and error messages. Use toasts for transient feedback.) Tj ET
+0.040 0.350 0.550 rg 61.00 224.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 222.39 Tm (Add a global error boundary so one broken component does not blank the whole page.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 197.89 Tm (B11. Testing the frontend) Tj ET
+0.040 0.350 0.550 rg 61.00 182.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 180.39 Tm (Unit and component tests with Vitest \(or Jest\) plus React Testing Library. Test behavior the user) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 165.89 Tm (sees, not implementation details.) Tj ET
+0.040 0.350 0.550 rg 61.00 153.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 151.39 Tm (End-to-end tests with Playwright for critical flows \(sign up, checkout, core navigation\).) Tj ET
+0.040 0.350 0.550 rg 61.00 139.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 136.89 Tm (Mock network with MSW so tests are deterministic and do not depend on a live backend.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 112.39 Tm (B12. Deployment) Tj ET
+0.040 0.350 0.550 rg 61.00 97.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 94.89 Tm (Vercel is the lowest-friction host and matches Next.js features one-to-one. Self-hosting is fully) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 80.39 Tm (supported via the standalone output and a Node server in a Docker container, or a static export for) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 65.89 Tm (fully static sites.) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (7 / 10) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 6501 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+0.040 0.350 0.550 rg 61.00 769.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 767.39 Tm (Know your runtimes: the Edge runtime is fast and global but has a limited API surface; the Node) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 752.89 Tm (runtime is full-featured. Choose per route.) Tj ET
+0.040 0.350 0.550 rg 61.00 740.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 738.39 Tm (Set caching and CDN headers deliberately. Understand the cost and behavior of image optimization) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 723.89 Tm (at scale.) Tj ET
+0.040 0.350 0.550 rg 61.00 711.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 709.39 Tm (Monitor real users with Sentry and a web-vitals/analytics tool. Watch bundle size and Core Web) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 694.89 Tm (Vitals over time, not just at launch.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 670.39 Tm (B13. Next.js common pitfalls) Tj ET
+0.040 0.350 0.550 rg 61.00 655.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 652.89 Tm (Leaking secrets by prefixing them with NEXT_PUBLIC_.) Tj ET
+0.040 0.350 0.550 rg 61.00 640.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 638.39 Tm (Marking everything "use client" and shipping a huge bundle, defeating the point of Server) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 623.89 Tm (Components.) Tj ET
+0.040 0.350 0.550 rg 61.00 611.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 609.39 Tm (Fetching in useEffect when a Server Component fetch would be simpler, faster, and SEO-friendly.) Tj ET
+0.040 0.350 0.550 rg 61.00 597.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 594.89 Tm (No explicit caching strategy, leading to either stale data or no caching at all.) Tj ET
+0.040 0.350 0.550 rg 61.00 582.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 580.39 Tm (Hydration mismatches from rendering different markup on server and client \(for example using) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 565.89 Tm (Date.now\(\) or window during render\).) Tj ET
+0.040 0.350 0.550 rg 61.00 553.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 551.39 Tm (Ignoring loading and error states, and shipping layout shift from unsized images.) Tj ET
+BT /F2 16 Tf 0.040 0.350 0.550 rg 1 0 0 1 56.00 519.39 Tm (Part C - Connecting Backend and Frontend) Tj ET
+0.040 0.350 0.550 rg 56.00 514.39 483.28 1.40 re f
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 481.89 Tm (C1. The API contract) Tj ET
+0.040 0.350 0.550 rg 61.00 466.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 464.39 Tm (The OpenAPI schema generated by Django is the contract. Generate the TypeScript client and types) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 449.89 Tm (from it \(openapi-typescript or orval\) so the frontend and backend never drift. When the API changes,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 435.39 Tm (the frontend fails to compile, which is exactly what you want.) Tj ET
+0.040 0.350 0.550 rg 61.00 423.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 420.89 Tm (Define a single, consistent error response shape on the backend and handle it in one place on the) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 406.39 Tm (frontend.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 381.89 Tm (C2. Auth across the stack) Tj ET
+0.040 0.350 0.550 rg 61.00 366.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 364.39 Tm (For a same-site web app, cookie-based sessions are the simplest secure choice: Django sets an) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 349.89 Tm (httpOnly cookie, the browser sends it automatically, and CSRF protection covers mutations.) Tj ET
+0.040 0.350 0.550 rg 61.00 337.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 335.39 Tm (For cross-domain or mobile, use JWT with short-lived access tokens and refresh tokens, and a clear) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 320.89 Tm (rotation and revocation strategy.) Tj ET
+0.040 0.350 0.550 rg 61.00 308.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 306.39 Tm (Configure CORS and CSRF together and test them early; they are the most common source of) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 291.89 Tm ("works locally, breaks in prod" auth bugs.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 267.39 Tm (C3. Environments and delivery) Tj ET
+0.040 0.350 0.550 rg 61.00 252.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 249.89 Tm (Maintain clear environments: local, staging, production, each with its own config and database.) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 235.39 Tm (Never test against production data.) Tj ET
+0.040 0.350 0.550 rg 61.00 223.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 220.89 Tm (Consider a monorepo \(Turborepo\) to share types and tooling between frontend and backend, or) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 206.39 Tm (keep separate repos with a published types package. Either works; pick based on team size.) Tj ET
+0.040 0.350 0.550 rg 61.00 194.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 191.89 Tm (Use Docker Compose for a one-command local stack \(Postgres, Redis, backend, frontend\). Match) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 177.39 Tm (local versions to production.) Tj ET
+0.040 0.350 0.550 rg 61.00 165.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 162.89 Tm (Build one CI/CD pipeline that lints, type-checks, tests, builds, and deploys. Block merges on red.) Tj ET
+BT /F2 16 Tf 0.040 0.350 0.550 rg 1 0 0 1 56.00 130.89 Tm (Part D - The AI-Era Developer Mindset) Tj ET
+0.040 0.350 0.550 rg 56.00 125.89 483.28 1.40 re f
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 93.39 Tm (D1. What changes and what does not) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 75.89 Tm (AI agents change how fast you produce code. They do not change who is responsible for it. You can) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (8 / 10) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 18 0 R >>
+endobj
+20 0 obj
+<< /Length 6661 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 767.39 Tm (generate a feature in minutes, but you still own its security, performance, correctness, and fit within the) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 752.39 Tm (system. The bottleneck moves from typing to judgment.) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 732.39 Tm (What AI is great at: scaffolding, boilerplate, writing tests from a spec, explaining unfamiliar code,) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 717.39 Tm (translating between frameworks, and proposing options. Lean on it for these.) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 697.39 Tm (What stays your job: system design, data modeling, security decisions, choosing trade-offs, defining the) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 682.39 Tm (contract, and verifying that the generated code is actually correct for your context.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 652.39 Tm (D2. Always review AI-generated code for) Tj ET
+0.040 0.350 0.550 rg 61.00 637.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 634.89 Tm (Security: is auth enforced at the object level, is input validated, are there injection or XSS holes, are) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 620.39 Tm (secrets handled correctly.) Tj ET
+0.040 0.350 0.550 rg 61.00 608.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 605.89 Tm (Data and performance: does it introduce N+1 queries, missing indexes, unbounded lists, or blocking) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 591.39 Tm (calls in the request path.) Tj ET
+0.040 0.350 0.550 rg 61.00 579.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 576.89 Tm (Correctness and edge cases: empty inputs, concurrency, error paths, and failure modes the) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 562.39 Tm (happy-path demo never hits.) Tj ET
+0.040 0.350 0.550 rg 61.00 550.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 547.89 Tm (Fit: does it match the project's patterns, or did it invent a new way of doing something you already) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 533.39 Tm (solved.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 508.89 Tm (D3. Fundamentals AI does not replace) Tj ET
+0.040 0.350 0.550 rg 61.00 493.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 491.39 Tm (How HTTP works: methods, status codes, headers, caching, cookies.) Tj ET
+0.040 0.350 0.550 rg 61.00 479.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 476.89 Tm (Databases and SQL: indexes, transactions, the query the ORM actually runs.) Tj ET
+0.040 0.350 0.550 rg 61.00 464.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 462.39 Tm (Security basics: the OWASP top risks and how your stack mitigates each.) Tj ET
+0.040 0.350 0.550 rg 61.00 450.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 447.89 Tm (Debugging: reading a stack trace, bisecting a problem, forming and testing a hypothesis.) Tj ET
+0.040 0.350 0.550 rg 61.00 435.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 433.39 Tm (System design: where state lives, how services talk, what fails and how.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 408.89 Tm (D4. A healthy workflow with AI) Tj ET
+0.040 0.350 0.550 rg 61.00 393.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 391.39 Tm (Work in small, reviewable diffs. A 2000-line AI dump is unreviewable and therefore unsafe.) Tj ET
+0.040 0.350 0.550 rg 61.00 379.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 376.89 Tm (Keep a strong automated safety net: types, linters, and tests catch a large share of AI mistakes) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 362.39 Tm (before you do.) Tj ET
+0.040 0.350 0.550 rg 61.00 350.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 347.89 Tm (Write or generate tests for the behavior, then let AI iterate against them.) Tj ET
+0.040 0.350 0.550 rg 61.00 335.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 333.39 Tm (Read the docs for the critical 20 percent \(auth, payments, data model\). Let AI handle the routine 80) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 318.89 Tm (percent, with your review.) Tj ET
+BT /F2 16 Tf 0.040 0.350 0.550 rg 1 0 0 1 56.00 286.89 Tm (Part E - Production-Ready Checklist) Tj ET
+0.040 0.350 0.550 rg 56.00 281.89 483.28 1.40 re f
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 249.39 Tm (E1. Backend checklist) Tj ET
+0.040 0.350 0.550 rg 61.00 234.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 231.89 Tm (DEBUG is False, SECRET_KEY and all secrets come from the environment, ALLOWED_HOSTS is) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 217.39 Tm (set.) Tj ET
+0.040 0.350 0.550 rg 61.00 205.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 202.89 Tm (HTTPS enforced, secure and httpOnly cookies, HSTS enabled.) Tj ET
+0.040 0.350 0.550 rg 61.00 190.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 188.39 Tm (Custom user model, object-level permissions, throttling and rate limits.) Tj ET
+0.040 0.350 0.550 rg 61.00 176.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 173.89 Tm (PostgreSQL, indexes for hot queries, no N+1, transactions on multi-step writes.) Tj ET
+0.040 0.350 0.550 rg 61.00 161.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 159.39 Tm (Background tasks for slow work, idempotent and retryable.) Tj ET
+0.040 0.350 0.550 rg 61.00 147.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 144.89 Tm (Structured logging with request IDs, Sentry, health checks, metrics.) Tj ET
+0.040 0.350 0.550 rg 61.00 132.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 130.39 Tm (Multi-stage Docker image, non-root user, migrations run once per release, static and media off local) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 115.89 Tm (disk.) Tj ET
+0.040 0.350 0.550 rg 61.00 103.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 101.39 Tm (CI runs lint, type-check, and tests against a production-like database.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 76.89 Tm (E2. Frontend checklist) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 286.381 36 Tm (9 / 10) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 20 0 R >>
+endobj
+22 0 obj
+<< /Length 2996 >>
+stream
+0.8 0.8 0.8 rg 56 795.89 483.28 0.5 re f
+BT /F1 8.5 Tf 0.42 0.42 0.42 rg 1 0 0 1 56 801.89 Tm (Production Fullstack Guide) Tj ET
+0.040 0.350 0.550 rg 61.00 769.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 767.39 Tm (TypeScript strict mode, no any, runtime validation at boundaries with Zod.) Tj ET
+0.040 0.350 0.550 rg 61.00 755.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 752.89 Tm (Server Components by default, minimal and leaf-level client components.) Tj ET
+0.040 0.350 0.550 rg 61.00 740.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 738.39 Tm (Explicit caching and revalidation strategy per route, no fetch-in-useEffect for server state.) Tj ET
+0.040 0.350 0.550 rg 61.00 726.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 723.89 Tm (next/image and next/font in use, bundle analyzed, Core Web Vitals tracked.) Tj ET
+0.040 0.350 0.550 rg 61.00 711.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 709.39 Tm (Auth tokens in httpOnly cookies, route protection in middleware plus server-side checks.) Tj ET
+0.040 0.350 0.550 rg 61.00 697.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 694.89 Tm (Metadata, sitemap, robots, and structured data configured.) Tj ET
+0.040 0.350 0.550 rg 61.00 682.89 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 680.39 Tm (loading, error, and not-found states handled everywhere.) Tj ET
+0.040 0.350 0.550 rg 61.00 668.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 665.89 Tm (Vitest/RTL plus Playwright e2e for critical flows, MSW for mocking.) Tj ET
+BT /F2 12.5 Tf 0.850 0.340 0.100 rg 1 0 0 1 56.00 641.39 Tm (E3. A pragmatic default stack) Tj ET
+0.040 0.350 0.550 rg 61.00 626.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 623.89 Tm (Backend: Django + Django REST Framework or Django Ninja, PostgreSQL, Redis, Celery,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 609.39 Tm (Gunicorn/Uvicorn, Docker, Sentry.) Tj ET
+0.040 0.350 0.550 rg 61.00 597.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 594.89 Tm (Frontend: Next.js \(App Router\) + TypeScript strict, Tailwind + shadcn/ui, TanStack Query,) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 580.39 Tm (react-hook-form + Zod, Auth.js or cookie sessions.) Tj ET
+0.040 0.350 0.550 rg 61.00 568.39 3.00 3.00 re f
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 565.89 Tm (Glue: OpenAPI to typed client, Docker Compose locally, one CI/CD pipeline, staging before) Tj ET
+BT /F1 10.5 Tf 0.120 0.120 0.120 rg 1 0 0 1 70.00 551.39 Tm (production.) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 536.89 Tm (Build it small, ship it safe, measure it in production, and let AI accelerate the parts you already) Tj ET
+BT /F1 10.5 Tf 0.100 0.100 0.100 rg 1 0 0 1 56.00 521.89 Tm (understand.) Tj ET
+BT /F1 9 Tf 0.42 0.42 0.42 rg 1 0 0 1 283.87899999999996 36 Tm (10 / 10) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 22 0 R >>
+endobj
+24 0 obj
+<< /Type /Pages /Count 10 /Kids [ 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R ] >>
+endobj
+25 0 obj
+<< /Type /Catalog /Pages 24 0 R >>
+endobj
+xref
+0 26
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000309 00000 n 
+0000001944 00000 n 
+0000002097 00000 n 
+0000008223 00000 n 
+0000008376 00000 n 
+0000015572 00000 n 
+0000015725 00000 n 
+0000022940 00000 n 
+0000023095 00000 n 
+0000030221 00000 n 
+0000030376 00000 n 
+0000037528 00000 n 
+0000037683 00000 n 
+0000044774 00000 n 
+0000044929 00000 n 
+0000051483 00000 n 
+0000051638 00000 n 
+0000058352 00000 n 
+0000058507 00000 n 
+0000061556 00000 n 
+0000061711 00000 n 
+0000061833 00000 n 
+trailer
+<< /Size 26 /Root 25 0 R >>
+startxref
+61884
+%%EOF
